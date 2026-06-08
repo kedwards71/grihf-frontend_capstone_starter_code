@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    color: white;
+}
+/* Navigation Bar */
+.navbar{
+    margin: 10px;
+    background-color: rgb(180, 180, 180);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+
+}
+
+.navbarItems{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    list-style-type: none;
+
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: aqua;
+}

@@ -12,24 +12,25 @@
 
             <nav class="navbar">
                 <!-- Logo and Company Name in the same group -->
-                <div>
-                    <h3>StayHealthy <img src="../assets/medical-team.png" width="40px" alt="Medical Team"></h3>
+                <div class="nav__logo">
+                    <h3>StayHealthy</h3>
+                    <img src="../assets/medical-team.png" height="70px" alt="Medical Team">
                 </div>
 
                 <!-- Hamburger Menu w/ onClick event listener -->
-                 <div class="nav__icon" onclick={handleClick}>
+                 <div class="nav__icon" onclick={handleClick()}>
                     <i class="fa fa-times fa fa-bars"></i>
                  </div>
 
 
 
                 <!-- Individual Links in the same group -->
-                <ul class="navbarItems active">
-                    <li><a href="#login">Login</a></li>
-                    <li><a href="#signUp">Sign-Up</a></li>
-                    <li><a href="#reviews">Reviews</a></li>
-                    <li><a href="#appointments">Appointments</a></li>
-                    <li><a href="#home">Home</a></li>
+                <ul class="navbarItems">
+                    <li class="link"><a href="#login">Login</a></li>
+                    <li class="link"><a href="#signUp">Sign-Up</a></li>
+                    <li class="link"><a href="#reviews">Reviews</a></li>
+                    <li class="link"><a href="#appointments">Appointments</a></li>
+                    <li class="link"><a href="#home">Home</a></li>
                 </ul>
             </nav>
 
@@ -39,9 +40,10 @@
                 const navbarItems = document.querySelector(".navbarItems");
                 const navIcon = document.querySelector(".nav__icon i");
 
-                navItems.classList.toggle("active");
+                navbarItems.classList.toggle("active");
 
-                if(navItems.classList.contains("active")){
+
+                if(navbarItems.classList.contains("active")){
                     navIcon.classList.remove("fa-bars");
                     navIcon.classList.add("fa-times");
                 } else {
